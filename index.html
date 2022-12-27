@@ -23,13 +23,13 @@
     <div class="container">
       <!-- application -->
       <div id="App" class="row pt-5">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
           <div class="card">
-            <div class="card-header">
+            <div class="card-header ">
               <h4>Agrega un producto</h4>
             </div>
 
-            <form id="product-form" class="card-body">
+            <form id="product-form" class="card-body ">
               <div class="form-group">
                 <input
                   type="text"
@@ -40,6 +40,7 @@
               </div>
               <div class="form-group">
                 <input
+                  step="0.01"
                   type="number"
                   id="price"
                   placeholder="Product Price"
@@ -47,15 +48,25 @@
                 />
               </div>
               <div class="form-group">
-                <input type="number" id="year" placeholder="Year Product" class="form-control">
+                <input
+                  type="number"
+                  id="year"
+                  placeholder="Year Product"
+                  class="form-control mb-3"
+                  value="2022"
+                />
               </div>
+              <input
+                type="submit"
+                value="Save"
+                class="btn btn-primary ml-auto"
+              />
             </form>
           </div>
         </div>
-        <div class="col-md-8">
-
-        </div>
+        <div class="col-md-8" id="product-list"></div>
       </div>
     </div>
+    <script src="/js/scrip.js"></script>
   </body>
 </html>
